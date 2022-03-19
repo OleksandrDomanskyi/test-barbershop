@@ -1,0 +1,25 @@
+:root {
+  --primary-text-color: #555555;
+  --primary-title-text-color: #303030;
+  --secondary-text-color: #9da4bd;
+  --secondary-title-text-color: #ffffff;
+  --accent-color: #ff6c00;
+  --online-form-color: rgba(157, 164, 189, 0.4);
+  --primary-background-color: #f7f7f7;
+  --secondary-background-color: #191c26;
+}
+
+$colors: (
+  'text-primary': #555555,
+  'text-secondary': #9da4bd,
+  'title-text-primary': #303030,
+  'title-text-secondary': #ffffff,
+  'accent': #ff6c00,
+  'online-form': rgba(157, 164, 189, 0.4),
+  'background-primary': #f7f7f7,
+  'background-secondary': #191c26,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
